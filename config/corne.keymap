@@ -15,15 +15,15 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  '  | BKSP |
-// | CTRL |  A  |  R  |  D  |  F  |  G  |   |  M  |  N   |  E  |  I  |  O  |  ;   |
+// | BKSP |  A  |  R  |  D  |  F  |  G  |   |  M  |  N   |  E  |  I  |  O  |  ;   |
 // | SHFT |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+//                    | ESC | LWR | SPC |   | ENT | RSE  | DEL |
                         display-name = "Base";
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+   &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SQT    &kp LCTRL
+   &kp BSPC &kp A &kp R &kp D &kp F &kp G   &kp M &kp N  &kp E     &kp I   &kp O &kp SEMI
+   &kp LSHFT &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp ESC
+                  &kp ESC &mo 1 &kp SPACE   &kp RET &mo 2 &kp DEL
                         >;
                 };
                 lower_layer {
