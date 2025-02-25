@@ -40,16 +40,16 @@
     };
 
     behaviors {
-        hrm: hrm {
+        hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM";
+            label = "HMR";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <13 14 15 16 19 20 21 22 22 0 1 2 4 5 6 7 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 8 3>;
+            hold-trigger-key-positions = <13 14 15 16 0 1 2 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 3>;
             hold-trigger-on-release;
         };
 
@@ -58,6 +58,19 @@
             label = "TD0";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SINGLE_QUOTE>;
+        };
+
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <36 37 38 39 40 41 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+            hold-trigger-on-release;
         };
     };
 
@@ -74,7 +87,7 @@
             display-name = "Base";
             bindings = <
 &kp CAPS          &kp Q                &kp W            &kp F            &kp P              &kp B        &kp J        &kp L               &kp U                 &kp Y             &kp APOS              &tog 3
-&kp LEFT_COMMAND  &hrm LEFT_CONTROL A  &hrm LEFT_ALT R  &hrm LEFT_GUI S  &hrm LEFT_SHIFT T  &lt 3 G      &kp M        &hrm RIGHT_SHIFT N  &hrm RIGHT_COMMAND E  &hrm RIGHT_ALT I  &hrm RIGHT_CONTROL O  &tog 2
+&kp LEFT_COMMAND  &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &lt 3 G      &kp M        &hmr RIGHT_SHIFT N  &hmr RIGHT_COMMAND E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O  &tog 2
 &kp LSHFT         &kp Z                &kp X            &kp C            &kp D              &kp V        &kp K        &kp H               &td0                  &kp DOT           &kp FSLH              &tog 1
                                                         &kp ESC          &lt 1 SPACE        &lt 2 TAB    &lt 4 ENTER  &lt 5 BACKSPACE     &kp DEL
             >;
