@@ -18,7 +18,7 @@
             key-positions = <27 26>;
         };
 
-        question_mark {
+        exclamation_mark {
             bindings = <&kp EXCLAMATION>;
             key-positions = <19 34>;
         };
