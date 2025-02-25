@@ -74,7 +74,7 @@
             display-name = "Base";
             bindings = <
 &kp CAPS   &kp Q                &kp W            &kp F            &kp P              &kp B        &kp J    &kp L               &kp U                 &kp Y             &kp APOS              &kp LCTRL
-&kp N      &hrm LEFT_CONTROL A  &hrm LEFT_ALT R  &hrm LEFT_GUI S  &hrm LEFT_SHIFT T  &lt 3 G      &kp M    &hrm RIGHT_SHIFT N  &hrm RIGHT_COMMAND E  &hrm RIGHT_ALT I  &hrm RIGHT_CONTROL O  &kp SEMI
+&mo 2      &hrm LEFT_CONTROL A  &hrm LEFT_ALT R  &hrm LEFT_GUI S  &hrm LEFT_SHIFT T  &lt 3 G      &kp M    &hrm RIGHT_SHIFT N  &hrm RIGHT_COMMAND E  &hrm RIGHT_ALT I  &hrm RIGHT_CONTROL O  &kp SEMI
 &kp LSHFT  &kp Z                &kp X            &kp C            &kp D              &kp V        &kp K    &kp H               &td0                  &kp DOT           &kp FSLH              &kp ESC
                                                  &kp ESC          &lt 1 SPACE        &lt 2 TAB    &kp RET  &kp BACKSPACE       &kp DEL
             >;
