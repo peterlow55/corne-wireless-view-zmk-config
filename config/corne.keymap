@@ -52,6 +52,13 @@
             hold-trigger-key-positions = <13 14 15 16 19 20 21 22 22>;
             hold-trigger-on-release;
         };
+
+        td0: td0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD0";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SINGLE_QUOTE>;
+        };
     };
 
     keymap {
@@ -68,7 +75,7 @@
             bindings = <
 &kp CAPS   &kp Q                &kp W            &kp F            &kp P              &kp B        &kp J    &kp L               &kp U                 &kp Y             &kp APOS              &kp LCTRL
 &kp BSPC   &hrm LEFT_CONTROL A  &hrm LEFT_ALT R  &hrm LEFT_GUI S  &hrm LEFT_SHIFT T  &lt 3 G      &kp M    &hrm RIGHT_SHIFT N  &hrm RIGHT_COMMAND E  &hrm RIGHT_ALT I  &hrm RIGHT_CONTROL O  &kp SEMI
-&kp LSHFT  &kp Z                &kp X            &kp C            &kp D              &kp V        &kp K    &kp H               &kp COMMA             &kp DOT           &kp FSLH              &kp ESC
+&kp LSHFT  &kp Z                &kp X            &kp C            &kp D              &kp V        &kp K    &kp H               &td0                  &kp DOT           &kp FSLH              &kp ESC
                                                  &kp ESC          &lt 1 SPACE        &lt 2 TAB    &kp RET  &kp BACKSPACE       &kp DEL
             >;
         };
@@ -98,10 +105,10 @@
 
             display-name = "Num";
             bindings = <
-&trans  &trans  &trans                &trans                 &kp EQUAL  &trans          &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp PLUS        &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &trans                &trans                 &kp SLASH  &kp ASTERISK    &kp N0  &kp N1  &kp N2  &kp N3  &trans  &trans
-                                      &trans                 &trans     &trans          &trans  &trans  &trans
+&trans  &trans  &trans                &trans                 &kp EQUAL  &trans          &trans                    &mt AMPERSAND N7  &mt ASTERISK N8  &mt LEFT_PARENTHESIS N9  &trans  &trans
+&trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp PLUS        &trans                    &mt DOLLAR N4     &mt PERCENT N5   &mt CARET N6             &trans  &trans
+&trans  &trans  &trans                &trans                 &kp SLASH  &kp ASTERISK    &mt RIGHT_PARENTHESIS N0  &mt EXCL N1       &mt AT N2        &mt HASH N3              &trans  &trans
+                                      &trans                 &trans     &trans          &trans                    &trans            &trans
             >;
         };
 
