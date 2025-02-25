@@ -119,6 +119,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans            &trans          &trans             &trans             &trans
                         &trans  &trans  &trans    &trans            &trans            &trans
             >;
+
+            label = "Mouse";
         };
 
         bt+fn_layer {
@@ -128,6 +130,8 @@
 &trans      &trans        &trans        &trans        &trans        &trans          &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                         &trans        &trans        &trans          &trans  &trans  &trans
             >;
+
+            label = "BT + FN";
         };
 
         media_layer {
@@ -137,6 +141,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans      &trans                &trans
             >;
+
+            label = "Media";
         };
     };
 };
