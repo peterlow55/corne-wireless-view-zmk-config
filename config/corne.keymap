@@ -44,6 +44,31 @@
             bindings = <&none>;
             key-positions = <34 33>;
         };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <31 32 33>;
+        };
+
+        ampersand {
+            bindings = <&kp LS(AMPERSAND)>;
+            key-positions = <10 19>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <10 4>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <10 28>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <31 32 33 34>;
+        };
     };
 
     behaviors {
