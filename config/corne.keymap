@@ -119,6 +119,19 @@
             bindings = <&kp ASTERISK>, <&kp HASH>;
         };
 
+        td3: td3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD3";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp LA(EQUAL)>;
+        };
+
+        td4: td4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD4";
+            #binding-cells = <0>;
+            bindings = <&kp LA(X)>, <&kp TILDE>;
+        };
     };
 
     keymap {
@@ -165,7 +178,7 @@
 
             display-name = "Num";
             bindings = <
-&trans  &trans  &trans                &trans                 &kp EQUAL  &trans          &trans        &trans            &trans       &trans                   &trans                    &trans
+&trans  &trans  &trans                &trans                 &td4       &td3            &trans        &trans            &trans       &trans                   &trans                    &trans
 &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp PLUS        &mt CARET N6  &mt AMPERSAND N7  &mt STAR N8  &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &trans
 &trans  &trans  &trans                &trans                 &kp SLASH  &kp ASTERISK    &mt EXCL N1   &mt AT N2         &mt HASH N3  &mt DOLLAR N4            &mt PERCENT N5            &trans
                                       &trans                 &trans     &trans          &trans        &trans            &trans
