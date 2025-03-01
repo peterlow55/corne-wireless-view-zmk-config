@@ -56,13 +56,6 @@
             require-prior-idle-ms = <150>;
         };
 
-        td0: td0_,__ {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD0 , '";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SINGLE_QUOTE>;
-        };
-
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
@@ -77,21 +70,31 @@
             require-prior-idle-ms = <150>;
         };
 
-        td2 / \:
-
-        td2____ {
+        td0: td0 {
             compatible = "zmk,behavior-tap-dance";
+            label = "TD0";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SQT>;
+        };
 
-            label = "TD2 / \";
-            #
-
-            binding-cells = <0>;
+        td1: td1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD1";
+            #binding-cells = <0>;
             bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>;
+        };
+
+        td3: td3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD3";
+            #binding-cells = <0>;
+            bindings = <&kp ASTERISK>, <&kp HASH>;
         };
 
         td2 / \:
 
-        td2____ { compatible = "zmk,behavior-tap-dance"; };
+
+        td2 / \:
     };
 
     keymap {
@@ -106,9 +109,9 @@
 
             display-name = "Base";
             bindings = <
-&kp CAPS   &kp Q                &kp W            &kp F            &kp P              &kp B        &kp J        &kp L            &kp U                 &kp Y             &td1 * #              &tog 5
+&kp CAPS   &kp Q                &kp W            &kp F            &kp P              &kp B        &kp J        &kp L            &kp U                 &kp Y             &td1                  &tog 5
 &kp LGUI   &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &lt 5 G      &kp M        &hmr RSHIFT N    &hmr RIGHT_COMMAND E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O  &tog 2
-&kp LSHFT  &kp Z                &kp X            &kp C            &kp D              &kp V        &kp K        &kp H            &td0 , '              &kp DOT           &td2 / \              &tog 1
+&kp LSHFT  &kp Z                &kp X            &kp C            &kp D              &kp V        &kp K        &kp H            &td0                  &kp DOT           &td1                  &tog 1
                                                  &kp ESC          &lt 1 SPACE        &lt 2 TAB    &lt 3 ENTER  &lt 4 BACKSPACE  &kp DEL
             >;
         };
