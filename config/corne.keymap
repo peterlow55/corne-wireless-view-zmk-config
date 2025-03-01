@@ -119,10 +119,6 @@
             bindings = <&kp ASTERISK>, <&kp HASH>;
         };
 
-        td2 / \:
-
-
-        td2 / \:
     };
 
     keymap {
