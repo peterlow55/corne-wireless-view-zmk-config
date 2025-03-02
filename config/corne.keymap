@@ -232,6 +232,13 @@
             bindings = <&kp LG(SPACE) &kp D &kp I &kp C &kp ENTER>;
             label = "MC07DICT";
         };
+
+        mc07download: mc07download {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &kp FSLH &kp LS(U) &kp S &kp E &kp R &kp S &kp FSLH &kp P &kp E &kp T &kp E &kp R &kp L &kp O &kp W &kp FSLH &kp LS(D) &kp O &kp W &kp N &kp L &kp O &kp A &kp D &kp S &kp DOWN &kp DOWN &kp ENTER>;
+            label = "MC07DOWNLOAD";
+        };
     };
 
     keymap {
@@ -248,7 +255,7 @@
             bindings = <
 &mc06dictionary  &kp Q                &kp W            &kp F                  &kp P              &kp B        &kp J        &kp L            &kp U                 &kp Y             &td2                  &kp C_VOL_UP
 &mc05settings    &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S        &hml LEFT_SHIFT T  &lt 5 G      &kp M        &hmr RSHIFT N    &hmr RIGHT_COMMAND E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O  &kp C_VOLUME_DOWN
-&none            &kp Z                &kp X            &kp C                  &kp D              &kp V        &kp K        &kp H            &td0                  &td9              &td1                  &kp LG(DOWN)
+&mc07download    &kp Z                &kp X            &kp C                  &kp D              &kp V        &kp K        &kp H            &td0                  &td9              &td1                  &kp LG(DOWN)
                                                        &mt LC(LG(SPACE)) ESC  &lt 1 SPACE        &lt 2 TAB    &lt 3 ENTER  &lt 4 BACKSPACE  &kp DEL
             >;
         };
