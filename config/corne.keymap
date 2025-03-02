@@ -125,7 +125,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD1";
             #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>, <&kp LA(SLASH)>;
+            bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>;
         };
 
         td2: td2 {
@@ -153,14 +153,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD5";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp LA(NON_US_BACKSLASH)>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
         };
 
         td6: td6 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD6";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp LA(LS(NON_US_BACKSLASH))>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
         };
 
         td7: td7 {
