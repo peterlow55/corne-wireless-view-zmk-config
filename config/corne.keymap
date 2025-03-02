@@ -338,3 +338,7 @@
         };
     };
 };
+
+&led_strip {
+    chain-length = <NUMBER_OF_LED>;
+};
