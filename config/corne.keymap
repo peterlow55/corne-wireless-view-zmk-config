@@ -269,8 +269,8 @@
 
             display-name = "Nav";
             bindings = <
-&kp CAPS        &kp LG(Q)  &kp LG(W)  &kp LG(LC(F))  &trans     &kp LG(B)    &kp PG_UP          &kp HOME               &kp UP       &kp END                  &trans             &trans
-&kp GLOBE       &kp LG(A)  &kp LG(R)  &kp LG(S)      &kp LG(T)  &trans       &kp PG_DN          &mt LG(LA(LEFT)) LEFT  &kp DOWN     &mt RA(RG(RIGHT)) RIGHT  &trans             &trans
+&none           &kp LG(Q)  &kp LG(W)  &kp LG(LC(F))  &trans     &kp LG(B)    &kp PG_UP          &kp HOME               &kp UP       &kp END                  &kp CAPS           &trans
+&none           &kp LG(A)  &kp LG(R)  &kp LG(S)      &kp LG(T)  &trans       &kp PG_DN          &mt LG(LA(LEFT)) LEFT  &kp DOWN     &mt RA(RG(RIGHT)) RIGHT  &kp GLOBE          &trans
 &kp LG(LS(N4))  &kp LG(Z)  &kp LG(X)  &kp LG(C)      &kp LG(D)  &kp LG(V)    &kp INSERT         &kp LC(LS(TAB))        &kp LC(TAB)  &kp LG(LS(MINUS))        &kp LG(LS(EQUAL))  &trans
                                       &trans         &trans     &trans       &kp LS(LG(GRAVE))  &kp LG(GRAVE)          &trans
             >;
