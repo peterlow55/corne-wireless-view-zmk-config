@@ -41,7 +41,7 @@
         };
 
         At {
-            bindings = <&none>;
+            bindings = <&kp AT>;
             key-positions = <34 33>;
         };
 
