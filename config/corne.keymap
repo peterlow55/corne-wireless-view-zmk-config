@@ -213,14 +213,14 @@
         mc03pw01: mc03pw01 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp N6 &kp N2 &kp L &kp O &kp W &kp H &kp A &kp N &kp Y &kp E &kp W &kp N0 &kp N6 &kp N0 &kp N7 &kp N8 &kp N6>;
+            bindings = <&none &kp N6 &kp N2 &kp L &kp O &kp W &kp H &kp A &kp N &kp Y &kp E &kp W &kp N0 &kp N6 &kp N0 &kp N7 &kp N8 &kp N6>;
             label = "MC03PW01";
         };
 
         mc04pw02: mc04pw02 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(U) &kp P &kp P &kp E &kp R &kp N6 &kp LS(R) &kp O &kp O &kp M &kp N7 &kp EXCL>;
+            bindings = <&kp LS(U) &kp P &kp P &kp E &kp R &kp N6 &kp LS(R) &kp O &kp O &kp M &kp N7 &none>;
             label = "MC04PW02";
         };
 
