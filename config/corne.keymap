@@ -353,7 +353,7 @@
     &ug PURPLE &ug ___  &ug ___    &ug    RED &ug ORANGE &ug ___     &ug ___    &ug_nl RED YELLOW   &ug_nl RED YELLOW &ug_nl RED YELLOW &ug ___     &ug ___
     &ug   BLUE &ug ___  &ug ___    &ug    RED &ug    RED &ug ___     &ug ___    &ug ___             &ug_nl RED YELLOW &ug_nl RED YELLOW &ug ___     &ug ___    
                                    &ug ORANGE &ug ORANGE &ug ORANGE  &ug ___    &ug GREEN           &ug ___  
-            label = "Nav";
+            layer-id = <Nav>;
         };
     };
 };
