@@ -181,6 +181,13 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT_BRACKET>, <&kp RIGHT_BRACE>;
         };
+
+        td9: td9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD9";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp LA(RIGHT_BRACE)>;
+        };
     };
 
     macros {
@@ -241,7 +248,7 @@
             bindings = <
 &mc06dictionary  &kp Q                &kp W            &kp F                  &kp P              &kp B        &kp J        &kp L            &kp U                 &kp Y             &td2                  &kp C_VOL_UP
 &mc05settings    &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S        &hml LEFT_SHIFT T  &lt 5 G      &kp M        &hmr RSHIFT N    &hmr RIGHT_COMMAND E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O  &kp C_VOLUME_DOWN
-&none            &kp Z                &kp X            &kp C                  &kp D              &kp V        &kp K        &kp H            &td0                  &kp DOT           &td1                  &kp LG(DOWN)
+&none            &kp Z                &kp X            &kp C                  &kp D              &kp V        &kp K        &kp H            &td0                  &td9              &td1                  &kp LG(DOWN)
                                                        &mt LC(LG(SPACE)) ESC  &lt 1 SPACE        &lt 2 TAB    &lt 3 ENTER  &lt 4 BACKSPACE  &kp DEL
             >;
         };
@@ -255,7 +262,7 @@
 
             display-name = "Nav";
             bindings = <
-&kp CAPS        &kp LG(Q)  &kp LG(W)  &kp LG(LC(F))  &trans     &kp LG(B)    &kp PG_UP          &kp HOME               &kp UP       &kp PAGE_DOWN            &trans             &trans
+&kp CAPS        &kp LG(Q)  &kp LG(W)  &kp LG(LC(F))  &trans     &kp LG(B)    &kp PG_UP          &kp HOME               &kp UP       &kp END                  &trans             &trans
 &kp GLOBE       &kp LG(A)  &kp LG(R)  &kp LG(S)      &kp LG(T)  &trans       &kp PG_DN          &mt LG(LA(LEFT)) LEFT  &kp DOWN     &mt RA(RG(RIGHT)) RIGHT  &trans             &trans
 &kp LG(LS(N4))  &kp LG(Z)  &kp LG(X)  &kp LG(C)      &kp LG(D)  &kp LG(V)    &kp INSERT         &kp LC(LS(TAB))        &kp LC(TAB)  &kp LG(LS(MINUS))        &kp LG(LS(EQUAL))  &trans
                                       &trans         &trans     &trans       &kp LS(LG(GRAVE))  &kp LG(GRAVE)          &trans
