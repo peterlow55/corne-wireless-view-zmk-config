@@ -130,7 +130,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD1";
             #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>;
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
         };
 
         td2: td2 {
