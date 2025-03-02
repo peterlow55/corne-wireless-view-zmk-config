@@ -201,15 +201,29 @@
         mc03pw01: mc03pw01 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N1 &kp N6 &kp N2 &kp L &kp O &kp W &kp H &kp A &kp N &kp Y &kp E &kp W &kp N0 &kp N6 &kp N0 &kp N7 &kp N8 &kp N6>;
+            bindings = <&kp N1 &kp N6 &kp N2 &kp L &kp O &kp W &kp H &kp A &kp N &kp Y &kp E &kp W &kp N0 &kp N6 &kp N0 &kp N7 &kp N8 &kp N6>;
             label = "MC03PW01";
         };
 
         mc04pw02: mc04pw02 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(U) &kp P &kp P &kp E &kp R &kp N6 &kp LS(R) &kp O &kp O &kp M &kp N7 &kp EXCL>;
+            bindings = <&kp LS(U) &kp P &kp P &kp E &kp R &kp N6 &kp LS(R) &kp O &kp O &kp M &kp N7 &kp EXCL>;
             label = "MC04PW02";
+        };
+
+        mc05settings: mc04settings {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &kp S &kp Y &kp S &kp ENTER>;
+            label = "MC04SETTINGS";
+        };
+
+        mc06dictionary: mc07dict {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &kp D &kp I &kp C &kp ENTER>;
+            label = "MC07DICT";
         };
     };
 
@@ -225,8 +239,8 @@
 
             display-name = "Base";
             bindings = <
-&kp CAPS              &kp Q                &kp W            &kp F                  &kp P              &kp B        &kp J        &kp L            &kp U                 &kp Y             &td2                  &kp C_VOL_UP
-&kp GLOBE             &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S        &hml LEFT_SHIFT T  &lt 5 G      &kp M        &hmr RSHIFT N    &hmr RIGHT_COMMAND E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O  &kp C_VOLUME_DOWN
+&kp LG(LS(N4))        &kp Q                &kp W            &kp F                  &kp P              &kp B        &kp J        &kp L            &kp U                 &kp Y             &td2                  &kp C_VOL_UP
+&mc05settings         &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S        &hml LEFT_SHIFT T  &lt 5 G      &kp M        &hmr RSHIFT N    &hmr RIGHT_COMMAND E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O  &kp C_VOLUME_DOWN
 &kp LG(LS(NUMBER_4))  &kp Z                &kp X            &kp C                  &kp D              &kp V        &kp K        &kp H            &td0                  &kp DOT           &td1                  &kp LG(DOWN)
                                                             &mt LC(LG(SPACE)) ESC  &lt 1 SPACE        &lt 2 TAB    &lt 3 ENTER  &lt 4 BACKSPACE  &kp DEL
             >;
@@ -241,10 +255,10 @@
 
             display-name = "Nav";
             bindings = <
-&trans  &kp LG(Q)  &kp LG(W)  &kp LG(LC(F))  &trans     &kp LG(B)    &kp PG_UP          &kp HOME               &kp UP       &kp PAGE_DOWN            &trans             &trans
-&trans  &kp LG(A)  &kp LG(R)  &kp LG(S)      &kp LG(T)  &trans       &kp PG_DN          &mt LG(LA(LEFT)) LEFT  &kp DOWN     &mt RA(RG(RIGHT)) RIGHT  &trans             &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)      &kp LG(D)  &kp LG(V)    &kp INSERT         &kp LC(LS(TAB))        &kp LC(TAB)  &kp LG(LS(MINUS))        &kp LG(LS(EQUAL))  &trans
-                              &trans         &trans     &trans       &kp LS(LG(GRAVE))  &kp LG(GRAVE)          &trans
+&kp CAPS   &kp LG(Q)  &kp LG(W)  &kp LG(LC(F))  &trans     &kp LG(B)    &kp PG_UP          &kp HOME               &kp UP       &kp PAGE_DOWN            &trans             &trans
+&kp GLOBE  &kp LG(A)  &kp LG(R)  &kp LG(S)      &kp LG(T)  &trans       &kp PG_DN          &mt LG(LA(LEFT)) LEFT  &kp DOWN     &mt RA(RG(RIGHT)) RIGHT  &trans             &trans
+&trans     &kp LG(Z)  &kp LG(X)  &kp LG(C)      &kp LG(D)  &kp LG(V)    &kp INSERT         &kp LC(LS(TAB))        &kp LC(TAB)  &kp LG(LS(MINUS))        &kp LG(LS(EQUAL))  &trans
+                                 &trans         &trans     &trans       &kp LS(LG(GRAVE))  &kp LG(GRAVE)          &trans
             >;
         };
 
