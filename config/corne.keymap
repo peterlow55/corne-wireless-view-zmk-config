@@ -85,6 +85,11 @@
             key-positions = <17 16>;
             layers = <2>;
         };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <10 7>;
+        };
     };
 
     behaviors {
