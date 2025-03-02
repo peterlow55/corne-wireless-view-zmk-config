@@ -183,6 +183,36 @@
         };
     };
 
+    macros {
+        mc01gmail: gmail1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp O &kp W &kp H &kp A &kp N &kp Y &kp E &kp W &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "GMAIL1";
+        };
+
+        mc02mail: moemail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp O &kp W &kp UNDER &kp H &kp A &kp N &kp UNDER &kp Y &kp E &kp W &kp AT &kp S &kp C &kp H &kp O &kp O &kp L &kp S &kp DOT &kp G &kp O &kp V &kp DOT &kp S &kp G>;
+            label = "MOEMAIL";
+        };
+
+        mc03pw01: mc03pw01 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N1 &kp N6 &kp N2 &kp L &kp O &kp W &kp H &kp A &kp N &kp Y &kp E &kp W &kp N0 &kp N6 &kp N0 &kp N7 &kp N8 &kp N6>;
+            label = "MC03PW01";
+        };
+
+        mc04pw02: mc04pw02 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(U) &kp P &kp P &kp E &kp R &kp N6 &kp LS(R) &kp O &kp O &kp M &kp N7 &kp EXCL>;
+            label = "MC04PW02";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -227,10 +257,10 @@
 
             display-name = "Num";
             bindings = <
-&trans  &trans  &kp LA(NON_US_BACKSLASH)  &kp LA(LS(NON_US_BACKSLASH))  &td4       &td3            &trans        &trans            &trans       &trans                   &trans                    &trans
-&trans  &trans  &td5                      &td6                          &kp MINUS  &kp PLUS        &mt CARET N6  &mt AMPERSAND N7  &mt STAR N8  &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &trans
-&trans  &trans  &td7                      &td8                          &td1       &kp ASTERISK    &mt EXCL N1   &mt AT N2         &mt HASH N3  &mt DOLLAR N4            &mt PERCENT N5            &trans
-                                          &trans                        &trans     &trans          &trans        &trans            &trans
+&trans     &trans      &kp LA(NON_US_BACKSLASH)  &kp LA(LS(NON_US_BACKSLASH))  &td4       &td3            &trans        &trans            &trans       &trans                   &trans                    &trans
+&mc04pw02  &mc02mail   &td5                      &td6                          &kp MINUS  &kp PLUS        &mt CARET N6  &mt AMPERSAND N7  &mt STAR N8  &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &trans
+&mc03pw01  &mc01gmail  &td7                      &td8                          &td1       &kp ASTERISK    &mt EXCL N1   &mt AT N2         &mt HASH N3  &mt DOLLAR N4            &mt PERCENT N5            &trans
+                                                 &trans                        &trans     &trans          &trans        &trans            &trans
             >;
         };
 
