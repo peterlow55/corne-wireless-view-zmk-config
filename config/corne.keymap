@@ -90,6 +90,11 @@
             bindings = <&kp PIPE>;
             key-positions = <10 7>;
         };
+
+        screenshot {
+            bindings = <&kp LS(LG(N3))>;
+            key-positions = <25 24>;
+        };
     };
 
     behaviors {
@@ -239,6 +244,13 @@
             bindings = <&kp LG(SPACE) &kp FSLH &kp LS(U) &kp S &kp E &kp R &kp S &kp FSLH &kp P &kp E &kp T &kp E &kp R &kp L &kp O &kp W &kp FSLH &kp LS(D) &kp O &kp W &kp N &kp L &kp O &kp A &kp D &kp S &kp DOWN &kp DOWN &kp ENTER>;
             label = "MC07DOWNLOAD";
         };
+
+        mc08CleanMyMac: mc08CleanMyMac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &kp FSLH &kp LS(A) &kp P &kp P &kp L &kp I &kp C &kp A &kp T &kp I &kp O &kp N &kp S &kp FSLH &kp LS(C) &kp L &kp E &kp A &kp N &kp LS(M) &kp Y &kp LS(M) &kp A &kp C &kp UNDER &kp N5 &kp DOT &kp A &kp P &kp P &kp ENTER>;
+            label = "MC08CLEANMYMAC";
+        };
     };
 
     keymap {
@@ -269,10 +281,10 @@
 
             display-name = "Nav";
             bindings = <
-&none           &kp LG(Q)  &kp LG(W)  &kp LG(LC(F))  &trans     &kp LG(B)    &kp PG_UP          &kp HOME               &kp UP       &kp END                  &kp CAPS           &trans
-&none           &kp LG(A)  &kp LG(R)  &kp LG(S)      &kp LG(T)  &trans       &kp PG_DN          &mt LG(LA(LEFT)) LEFT  &kp DOWN     &mt RA(RG(RIGHT)) RIGHT  &kp GLOBE          &trans
-&kp LG(LS(N4))  &kp LG(Z)  &kp LG(X)  &kp LG(C)      &kp LG(D)  &kp LG(V)    &kp INSERT         &kp LC(LS(TAB))        &kp LC(TAB)  &kp LG(LS(MINUS))        &kp LG(LS(EQUAL))  &trans
-                                      &trans         &trans     &trans       &kp LS(LG(GRAVE))  &kp LG(GRAVE)          &trans
+&none            &kp LG(Q)  &kp LG(W)  &kp LG(LC(F))  &trans     &kp LG(B)    &kp PG_UP          &kp HOME               &kp UP       &kp END                  &kp CAPS           &trans
+&mc08CleanMyMac  &kp LG(A)  &kp LG(R)  &kp LG(S)      &kp LG(T)  &trans       &kp PG_DN          &mt LG(LA(LEFT)) LEFT  &kp DOWN     &mt RA(RG(RIGHT)) RIGHT  &kp GLOBE          &trans
+&kp LG(LS(N4))   &kp LG(Z)  &kp LG(X)  &kp LG(C)      &kp LG(D)  &kp LG(V)    &kp INSERT         &kp LC(LS(TAB))        &kp LC(TAB)  &kp LG(LS(MINUS))        &kp LG(LS(EQUAL))  &trans
+                                       &trans         &trans     &trans       &kp LS(LG(GRAVE))  &kp LG(GRAVE)          &trans
             >;
         };
 
