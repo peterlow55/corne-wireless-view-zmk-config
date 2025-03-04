@@ -94,11 +94,6 @@
             bindings = <&kp LS(LG(N3))>;
             key-positions = <25 24>;
         };
-
-        reset {
-            bindings = <&kp C_RESET>;
-            key-positions = <38 37 36 39 40 41>;
-        };
     };
 
     behaviors {
@@ -321,10 +316,10 @@
 
         media_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                &trans                &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp K_MUTE   &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LA(ESC)  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans       &trans                &trans
+&ext_power EP_ON   &trans  &trans  &trans  &trans  &trans    &trans       &trans                &trans                &trans  &trans  &trans
+&ext_power EP_OFF  &trans  &trans  &trans  &trans  &trans    &kp K_MUTE   &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &trans  &trans  &trans
+&ext_power EP_TOG  &trans  &trans  &trans  &trans  &trans    &kp LA(ESC)  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans  &trans
+                                   &trans  &trans  &trans    &trans       &trans                &trans
             >;
 
             label = "Media";
