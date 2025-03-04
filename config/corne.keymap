@@ -316,9 +316,9 @@
 
         media_layer {
             bindings = <
-&ext_power EP_ON   &trans  &trans  &trans  &trans  &trans    &trans       &trans                &trans                &trans  &trans  &trans
-&ext_power EP_OFF  &trans  &trans  &trans  &trans  &trans    &kp K_MUTE   &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &trans  &trans  &trans
-&ext_power EP_TOG  &trans  &trans  &trans  &trans  &trans    &kp LA(ESC)  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans  &trans
+&ext_power EP_ON   &trans  &trans  &trans  &trans  &trans    &trans       &trans                &trans                &trans  &trans  &ext_power EP_ON
+&ext_power EP_OFF  &trans  &trans  &trans  &trans  &trans    &kp K_MUTE   &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &trans  &trans  &ext_power EP_OFF
+&ext_power EP_TOG  &trans  &trans  &trans  &trans  &trans    &kp LA(ESC)  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans  &ext_power EP_TOG
                                    &trans  &trans  &trans    &trans       &trans                &trans
             >;
 
