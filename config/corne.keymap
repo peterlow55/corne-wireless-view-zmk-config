@@ -8,8 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -94,6 +92,11 @@
         screenshot {
             bindings = <&kp LS(LG(N3))>;
             key-positions = <25 24>;
+        };
+
+        reset {
+            bindings = <&kp C_RESET>;
+            key-positions = <38 37 36 39 40 41>;
         };
     };
 
@@ -335,6 +338,15 @@
             >;
 
             label = "Mouse";
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
     };
 };
