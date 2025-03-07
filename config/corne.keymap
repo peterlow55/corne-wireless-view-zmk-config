@@ -12,6 +12,13 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#define Base 0
+#define Nav 1
+#define Num 2
+#define BT + FN 3
+#define Media 4
+#define Mouse 5
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -243,13 +250,6 @@
             label = "MC08CLEANMYMAC";
         };
     };
-
-#define Base 0
-#define Nav 1
-#define Num 2
-#define BT + FN 3
-#define Media 4
-#define Mouse 5
 
     keymap {
         compatible = "zmk,keymap";
