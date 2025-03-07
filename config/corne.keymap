@@ -248,7 +248,8 @@
 #define Nav 1
 #define Num 2
 #define BT + FN 3
-#define Mouse 4
+#define Media 4
+#define Mouse 5
 
     keymap {
         compatible = "zmk,keymap";
