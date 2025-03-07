@@ -244,6 +244,12 @@
         };
     };
 
+#define Base 0
+#define Nav 1
+#define Num 2
+#define BT + FN 3
+#define Mouse 4
+
     keymap {
         compatible = "zmk,keymap";
 
