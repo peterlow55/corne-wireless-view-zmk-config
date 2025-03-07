@@ -219,6 +219,20 @@
             #binding-cells = <0>;
             bindings = <&mt LC(LG(SPACE)) ESC>, <&key_repeat>;
         };
+
+        td15_left_mt: td15_left_mt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD15_LEFT_MT";
+            #binding-cells = <0>;
+            bindings = <&mt LG(LA(LEFT)) LEFT>, <&key_repeat>;
+        };
+
+        td16_right_mt: td16_right_mt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD16_RIGHT_MT";
+            #binding-cells = <0>;
+            bindings = <&mt LG(LA(RIGHT)) RIGHT>, <&key_repeat>;
+        };
     };
 
     macros {
@@ -307,10 +321,10 @@
 
             display-name = "Nav";
             bindings = <
-&ext_power EP_ON  &kp LG(Q)  &kp LG(W)  &kp LG(LC(F))  &trans     &kp LG(B)    &kp PG_UP          &kp HOME               &kp UP       &kp END                  &kp CAPS           &trans
-&mc08CleanMyMac   &kp LG(A)  &kp LG(R)  &kp LG(S)      &kp LG(T)  &trans       &kp PG_DN          &mt LG(LA(LEFT)) LEFT  &kp DOWN     &mt RA(RG(RIGHT)) RIGHT  &kp GLOBE          &trans
-&kp LG(LS(N4))    &kp LG(Z)  &kp LG(X)  &kp LG(C)      &kp LG(D)  &kp LG(V)    &kp INSERT         &kp LC(LS(TAB))        &kp LC(TAB)  &kp LG(LS(MINUS))        &kp LG(LS(EQUAL))  &trans
-                                        &trans         &trans     &trans       &kp LS(LG(GRAVE))  &kp LG(GRAVE)          &trans
+&ext_power EP_ON  &kp LG(Q)  &kp LG(W)  &kp LG(LC(F))  &trans     &kp LG(B)    &kp PG_UP          &kp HOME         &kp UP       &kp END            &kp CAPS           &trans
+&mc08CleanMyMac   &kp LG(A)  &kp LG(R)  &kp LG(S)      &kp LG(T)  &trans       &kp PG_DN          &td15_left_mt    &kp DOWN     &td16_right_mt     &kp GLOBE          &trans
+&kp LG(LS(N4))    &kp LG(Z)  &kp LG(X)  &kp LG(C)      &kp LG(D)  &kp LG(V)    &kp INSERT         &kp LC(LS(TAB))  &kp LC(TAB)  &kp LG(LS(MINUS))  &kp LG(LS(EQUAL))  &trans
+                                        &trans         &trans     &trans       &kp LS(LG(GRAVE))  &kp LG(GRAVE)    &trans
             >;
         };
 
