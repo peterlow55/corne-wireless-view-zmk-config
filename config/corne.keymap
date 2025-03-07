@@ -198,6 +198,27 @@
             #binding-cells = <0>;
             bindings = <&lt 2 TAB>, <&key_repeat>;
         };
+
+        td12_enter_layer: td12_enter_layer {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD12_ENTER_LAYER";
+            #binding-cells = <0>;
+            bindings = <&lt 3 ENTER>, <&key_repeat>;
+        };
+
+        td13_bkspc_layer: td13_bkspc_layer {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD13_BKSPC_LAYER";
+            #binding-cells = <0>;
+            bindings = <&lt 4 BACKSPACE>, <&key_repeat>;
+        };
+
+        td14_esc_emoji: td14_esc_emoji {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD14_ESC_EMOJI";
+            #binding-cells = <0>;
+            bindings = <&mt LC(LG(SPACE)) ESC>, <&key_repeat>;
+        };
     };
 
     macros {
@@ -270,10 +291,10 @@
 
             display-name = "Base";
             bindings = <
-&mc06dictionary  &kp Q                &kp W            &kp F                  &kp P              &kp B              &kp J        &kp L            &kp U                 &kp Y             &td2                  &kp LG(BACKSPACE)
-&mc05settings    &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S        &hml LEFT_SHIFT T  &lt 5 G            &kp M        &hmr RSHIFT N    &hmr RIGHT_COMMAND E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O  &none
-&mc07download    &kp Z                &kp X            &kp C                  &kp D              &kp V              &kp K        &kp H            &td0                  &td9              &td1                  &kp LG(DOWN)
-                                                       &mt LC(LG(SPACE)) ESC  &td10_space_layer  &td11_tab_layer    &lt 3 ENTER  &lt 4 BACKSPACE  &kp DEL
+&mc06dictionary  &kp Q                &kp W            &kp F            &kp P              &kp B              &kp J              &kp L              &kp U                 &kp Y             &td2                  &kp LG(BACKSPACE)
+&mc05settings    &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &lt 5 G            &kp M              &hmr RSHIFT N      &hmr RIGHT_COMMAND E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O  &none
+&mc07download    &kp Z                &kp X            &kp C            &kp D              &kp V              &kp K              &kp H              &td0                  &td9              &td1                  &kp LG(DOWN)
+                                                       &td14_esc_emoji  &td10_space_layer  &td11_tab_layer    &td12_enter_layer  &td13_bkspc_layer  &kp DEL
             >;
         };
 
