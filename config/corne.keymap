@@ -184,6 +184,20 @@
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp LA(RIGHT_BRACE)>;
         };
+
+        td10_space_layer: td10_space_layer {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD10_SPACE_LAYER";
+            #binding-cells = <0>;
+            bindings = <&lt 1 SPACE>, <&key_repeat>;
+        };
+
+        td11_tab_layer: td11_tab_layer {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD11_TAB_LAYER";
+            #binding-cells = <0>;
+            bindings = <&lt 2 TAB>, <&key_repeat>;
+        };
     };
 
     macros {
@@ -256,10 +270,10 @@
 
             display-name = "Base";
             bindings = <
-&mc06dictionary  &kp Q                &kp W            &kp F                  &kp P              &kp B        &kp J        &kp L            &kp U                 &kp Y             &td2                  &kp LG(BACKSPACE)
-&mc05settings    &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S        &hml LEFT_SHIFT T  &lt 5 G      &kp M        &hmr RSHIFT N    &hmr RIGHT_COMMAND E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O  &none
-&mc07download    &kp Z                &kp X            &kp C                  &kp D              &kp V        &kp K        &kp H            &td0                  &td9              &td1                  &kp LG(DOWN)
-                                                       &mt LC(LG(SPACE)) ESC  &lt 1 SPACE        &lt 2 TAB    &lt 3 ENTER  &lt 4 BACKSPACE  &kp DEL
+&mc06dictionary  &kp Q                &kp W            &kp F                  &kp P              &kp B              &kp J        &kp L            &kp U                 &kp Y             &td2                  &kp LG(BACKSPACE)
+&mc05settings    &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S        &hml LEFT_SHIFT T  &lt 5 G            &kp M        &hmr RSHIFT N    &hmr RIGHT_COMMAND E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O  &none
+&mc07download    &kp Z                &kp X            &kp C                  &kp D              &kp V              &kp K        &kp H            &td0                  &td9              &td1                  &kp LG(DOWN)
+                                                       &mt LC(LG(SPACE)) ESC  &td10_space_layer  &td11_tab_layer    &lt 3 ENTER  &lt 4 BACKSPACE  &kp DEL
             >;
         };
 
