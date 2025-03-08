@@ -231,6 +231,13 @@
             #binding-cells = <0>;
             bindings = <&mt LG(LA(RIGHT)) RIGHT>, <&key_repeat>;
         };
+
+        td17: td17 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD17";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp LA(LS(MINUS))>;
+        };
     };
 
     macros {
@@ -321,10 +328,10 @@
 
             display-name = "Num";
             bindings = <
-&trans     &trans      &kp LA(BACKSLASH)  &kp LA(LS(BACKSLASH))  &td4       &td3        &trans        &trans            &trans       &trans                   &trans                    &kp LA(G)
-&mc04pw02  &mc02mail   &td5               &td6                   &kp MINUS  &kp PLUS    &mt CARET N6  &mt AMPERSAND N7  &mt STAR N8  &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &kp LA(LS(O))
-&mc03pw01  &mc01gmail  &td7               &td8                   &td1       &td2        &mt EXCL N1   &mt AT N2         &mt HASH N3  &mt DOLLAR N4            &mt PERCENT N5            &kp LA(J)
-                                          &trans                 &trans     &trans      &trans        &trans            &trans
+&trans     &trans      &kp LA(BACKSLASH)  &kp LA(LS(BACKSLASH))  &td4    &td3        &trans  &trans  &trans  &trans  &trans  &kp LA(G)
+&mc04pw02  &mc02mail   &td5               &td6                   &td17   &kp PLUS    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp LA(LS(O))
+&mc03pw01  &mc01gmail  &td7               &td8                   &td1    &td2        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp LA(J)
+                                          &trans                 &trans  &trans      &trans  &trans  &trans
             >;
         };
 
