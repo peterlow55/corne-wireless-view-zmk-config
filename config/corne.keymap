@@ -346,10 +346,10 @@
 
             display-name = "Num";
             bindings = <
-&trans     &trans      &kp LA(BACKSLASH)  &kp LA(LS(BACKSLASH))  &td4    &td3        &trans  &trans  &trans  &trans  &trans  &kp LA(G)
-&mc04pw02  &mc02mail   &td5               &td6                   &td17   &kp PLUS    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp LA(LS(O))
-&mc03pw01  &mc01gmail  &td7               &td8                   &td1    &td2        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp LA(J)
-                                          &trans                 &trans  &trans      &trans  &trans  &trans
+&trans     &trans      &kp LA(BACKSLASH)  &kp LA(LS(BACKSLASH))  &td4    &td3        &kp LG(B)  &kp LG(I)  &kp LG(U)  &kp LS(LG(X))  &kp LG(LS(H))  &kp LA(G)
+&mc04pw02  &mc02mail   &td5               &td6                   &td17   &kp PLUS    &kp N6     &kp N7     &kp N8     &kp N9         &kp N0         &kp LA(LS(O))
+&mc03pw01  &mc01gmail  &td7               &td8                   &td1    &td2        &kp N1     &kp N2     &kp N3     &kp N4         &kp N5         &kp LA(J)
+                                          &trans                 &trans  &trans      &trans     &trans     &trans
             >;
         };
 
