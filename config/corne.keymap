@@ -180,7 +180,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD9";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp LA(RIGHT_BRACE)>;
+            bindings = <&kp DOT>, <&kp LA(N8)>, <&kp LA(LS(SEMICOLON))>;
         };
 
         td10_space_layer: td10_space_layer {
