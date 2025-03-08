@@ -377,7 +377,7 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_LEFT  &trans
+&trans  &trans  &trans  &trans  &molock  &trans    &msc SCRL_RIGHT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_LEFT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans          &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans           &trans          &trans          &trans           &trans          &trans
                         &trans  &trans  &trans    &mkp LCLK        &mkp RCLK       &mkp MCLK
