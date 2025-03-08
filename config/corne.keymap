@@ -84,6 +84,24 @@
             bindings = <&kp LS(LG(N3))>;
             key-positions = <25 24>;
         };
+
+        tog_navlayer {
+            bindings = <&tog 1>;
+            key-positions = <35 34>;
+            layers = <0>;
+        };
+
+        tog_numlayer {
+            bindings = <&tog 2>;
+            key-positions = <23 22>;
+            layers = <0>;
+        };
+
+        tog_mouselayer {
+            bindings = <&tog 5>;
+            key-positions = <11 10>;
+            layers = <0>;
+        };
     };
 
     behaviors {
