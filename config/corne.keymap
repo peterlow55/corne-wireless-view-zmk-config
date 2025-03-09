@@ -276,7 +276,7 @@
         mc03pw01: mc03pw01 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N6 &kp N2 &kp L &kp O &kp W &kp H &kp A &kp N &kp Y &kp E &kp W &kp N0 &kp N6 &kp N0 &kp N7 &kp N8 &kp N6>;
+            bindings = <&none &kp N6 &kp N2 &kp L &kp O &kp W &kp H &kp A &kp N &kp Y &kp E &kp W &kp N0 &kp N6 &kp N0 &kp N7 &kp N8 &kp N6 &kp ENTER>;
             label = "MC03PW01";
         };
 
