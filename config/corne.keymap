@@ -80,8 +80,8 @@
             key-positions = <10 7>;
         };
 
-        screenshot {
-            bindings = <&kp LS(LG(N3))>;
+        screenshot_select {
+            bindings = <&kp LS(LG(N4))>;
             key-positions = <25 24>;
         };
 
@@ -98,6 +98,11 @@
         tog_mouselayer {
             bindings = <&tog 5>;
             key-positions = <11 10>;
+        };
+
+        screenshot {
+            bindings = <&kp LS(LG(N3))>;
+            key-positions = <13 12>;
         };
     };
 
@@ -327,8 +332,8 @@
 
             display-name = "Nav";
             bindings = <
-&ext_power EP_ON  &kp LG(Q)  &kp LG(W)  &kp LG(LC(F))  &trans     &kp LG(B)    &kp PG_UP          &kp HOME         &kp UP       &kp END            &kp CAPS           &trans
-&kp LG(E)         &kp LG(A)  &kp LG(R)  &kp LG(S)      &kp LG(T)  &trans       &kp PG_DN          &td15_left_mt    &kp DOWN     &td16_right_mt     &kp GLOBE          &trans
+&ext_power EP_ON  &kp LG(Q)  &kp LG(W)  &kp LG(LC(F))  &trans     &kp LG(B)    &kp PG_UP          &kp HOME         &kp UP       &kp END            &kp CAPS           &kp LG(E)
+&kp LG(LS(LEFT))  &kp LG(A)  &kp LG(R)  &kp LG(S)      &kp LG(T)  &trans       &kp PG_DN          &td15_left_mt    &kp DOWN     &td16_right_mt     &kp GLOBE          &trans
 &kp LG(LS(N4))    &kp LG(Z)  &kp LG(X)  &kp LG(C)      &kp LG(D)  &kp LG(V)    &kp INSERT         &kp LC(LS(TAB))  &kp LC(TAB)  &kp LG(LS(MINUS))  &kp LG(LS(EQUAL))  &trans
                                         &trans         &trans     &trans       &kp LS(LG(GRAVE))  &kp LG(GRAVE)    &trans
             >;
