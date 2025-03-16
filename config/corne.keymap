@@ -334,7 +334,7 @@
             bindings = <
 &ext_power EP_ON  &kp LG(Q)  &kp LG(W)  &kp LG(LC(F))  &trans     &kp LG(B)    &kp PG_UP          &kp HOME         &kp UP       &kp END            &kp CAPS           &kp LG(E)
 &kp LG(LS(LEFT))  &kp LG(A)  &kp LG(R)  &kp LG(S)      &kp LG(T)  &trans       &kp PG_DN          &td15_left_mt    &kp DOWN     &td16_right_mt     &kp GLOBE          &trans
-&kp LG(LS(N4))    &kp LG(Z)  &kp LG(X)  &kp LG(C)      &kp LG(D)  &kp LG(V)    &kp INSERT         &kp LC(LS(TAB))  &kp LC(TAB)  &kp LG(LS(MINUS))  &kp LG(LS(EQUAL))  &trans
+&kp LG(LS(UP))    &kp LG(Z)  &kp LG(X)  &kp LG(C)      &kp LG(D)  &kp LG(V)    &kp INSERT         &kp LC(LS(TAB))  &kp LC(TAB)  &kp LG(LS(MINUS))  &kp LG(LS(EQUAL))  &trans
                                         &trans         &trans     &trans       &kp LS(LG(GRAVE))  &kp LG(GRAVE)    &trans
             >;
         };
