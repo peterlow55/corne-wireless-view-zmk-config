@@ -114,6 +114,11 @@
             bindings = <&tog 7>;
             key-positions = <37 36>;
         };
+
+        sleep {
+            bindings = <&kp K_SLEEP>;
+            key-positions = <36 37 38 39 40 41>;
+        };
     };
 
     behaviors {
